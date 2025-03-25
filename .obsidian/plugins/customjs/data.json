@@ -1,0 +1,9 @@
+{
+  "jsFiles": ".obsidian/plugins/customjs/style-adjuster.js",
+  "jsFolder": "",
+  "startupScriptNames": [
+    "StyleAdjuster"
+  ],
+  "registeredInvocableScriptNames": [],
+  "rerunStartupScriptsOnFileChange": true
+}

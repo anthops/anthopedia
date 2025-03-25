@@ -1,0 +1,80 @@
+name: Deploy Quartz site to GitHub Pages
+ 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+ 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+ 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+ 
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Delete old deployment
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: github-pages
+          onlyRemoveDeployments: true
+
+  build:
+    needs: cleanup
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+
+      # quartz uses file modification dates for last edited
+      # date on each page. Use the git added date as the file ts
+      - name: Set file timestamps
+        run: |
+          readarray -t CONTENT < <(git ls-files -z content | xargs -0 -n 1)
+          for file in "${CONTENT[@]}"; do
+            time="$(git log --pretty=format:%cd -n 1 \
+                  --date=format:%Y%m%d%H%M.%S --date-order -- "$file")"
+            if [ -z "$time" ]; then
+              echo "ERROR: skipping '$file' -- no git log found" >&2
+              continue
+            fi
+            touch -m -t "$time" "$file"
+          done 
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build docker image
+        run: docker build -t quartz .
+
+      - name: Extract static site from quartz container
+        run: |
+          docker run --name quartz_builder --env CI=true quartz
+          docker cp quartz_builder:/quartz/public ./public
+          docker rm quartz_builder
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+ 
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
