@@ -2,8 +2,14 @@
 title: File Timestamps
 tags:
   - git
+  - file-system
+  - linux
 ---
-## Set timestamps of checked-out files to match Git
+## Set timestamps of checked-out files to match Git (Linux)
+> [!tip]- Example Usecase
+> 
+> The anthopedia itself makes use of this within it's GitHub deploy workflow. This is because quartz has been configured to use the local file timestamps since quartz is being cloned at build time, which means quartz can't consult the git log for commit timestamps.
+
 After cloning or pulling new files in from a git repository the timestamps for all files will be equal to the exact time that you cloned or pulled the repository / files.
 If, for whatever reason, you wanted to set the timestamps of the local files to match what is represented in the git repository, you can create and run this script :
 ```sh
