@@ -26,3 +26,5 @@ The second option disables OpenGL's Framebuffer Objects, a feature that can some
 
 >[!tip]+ X11 -> Wayland
 >There are plans for JetBrains IDEs to eventually default to Wayland instead of X11, which *might* resolve or at least alleviate the issue without using this solution.
+
+After doing this, it's recommended to preemptively follow [[Linux Freezing after Suspend#The solution|these instructions]] if you are using an NVIDIA GPU with an affected driver since the enabling of OpenGL will leave you susceptible to the bug.
