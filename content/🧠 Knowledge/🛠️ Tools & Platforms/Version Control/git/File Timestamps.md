@@ -2,8 +2,7 @@
 title: File Timestamps
 tags:
   - git
-  - file-system
-  - linux
+url: git-file-timestamps
 ---
 ## Set timestamps of checked-out files to match Git (Linux)
 > [!tip]- Example Usecase

@@ -1,5 +1,6 @@
 ---
-title: Assemblers
+title: Compilers
 tags:
   - language-processors
+url: compilers
 ---

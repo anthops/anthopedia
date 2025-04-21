@@ -17,7 +17,7 @@ COPY --from=node /usr/local/bin /usr/local/bin
 # Install quartz
 ##############################################################
 
-ARG QUARTZ_VERSION=b397dae95113b0eaaf8054adf951fc533791bd0d
+ARG QUARTZ_VERSION=feat/1915-front-matter-url-override
 
 WORKDIR /quartz
 
@@ -25,7 +25,7 @@ RUN addgroup -S quartz && \
     adduser -S quartz -G quartz
 
 RUN apk add --no-cache --update coreutils git && \
-    git clone https://github.com/jackyzha0/quartz/ . && \
+    git clone https://github.com/anthops/quartz.git . && \
     git -c advice.detachedHead=false checkout "${QUARTZ_VERSION}" && \
     apk del git
 

@@ -4,6 +4,7 @@ tags:
   - java
   - springboot
   - project-layout
+url: java-springboot-project-layout
 ---
 ## Creating the project
 When creating a Java Springboot application, I start with [Spring Initializr](https://start.spring.io/) and pick `Gradle - Groovy` as the the dependency manager, with Java as the language (obviously). I'll usually select the latest stable versions for everything, package it in Jar, and then select core dependencies I'll need. These dependencies are usually things like:

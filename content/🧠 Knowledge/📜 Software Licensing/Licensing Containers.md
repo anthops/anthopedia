@@ -3,6 +3,7 @@ title: Licensing Containers
 tags:
   - licensing
   - containerisation
+url: licensing-containers
 ---
 >[!warning] Disclaimer
 >This note contains **personal interpretations** of software licenses. I am **NOT A LAWYER** and this is **NOT LEGAL ADVICE**. Inaccuracies may exist. Always consult a licensed attorney for legal matters.

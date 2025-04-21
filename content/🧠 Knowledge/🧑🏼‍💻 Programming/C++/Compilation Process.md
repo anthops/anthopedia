@@ -3,5 +3,6 @@ Compilation Process:
 tags:
   - cpp
   - language-processors
-title: cpp-compilation-process
+title: C++ Compilation Process
+url: cpp-compilation-process
 ---

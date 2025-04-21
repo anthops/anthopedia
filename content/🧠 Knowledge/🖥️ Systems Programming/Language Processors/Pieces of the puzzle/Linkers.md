@@ -2,6 +2,7 @@
 title: Linkers
 tags:
   - language-processors
+url: linkers
 ---
 ## Static Linking
 *todo*

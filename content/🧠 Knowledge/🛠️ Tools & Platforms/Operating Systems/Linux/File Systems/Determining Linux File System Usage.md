@@ -3,6 +3,7 @@ title: Determining Linux File System Usage
 tags:
   - linux
   - file-system
+url: linux-fs-usage
 ---
 Much like with [[Linux File System Navigation|navigating the Linux file system]], determining file system usage and pinpointing where and what is taking up space is a lot more difficult than in more user friendly operating systems - when we're working exclusively in the CLI that is. This page outlines a few tools that are necessary for determining file system usage in Linux systems.
 ## Viewing file system usage
@@ -52,7 +53,7 @@ Once installed, just run the following:
 ncdu -e -r <directory>
 ```
 
-> [!warning]+ Important Tip
+> [!warning] Important Tip
 > Unless you plan on deleting files via the `ncdu` UI, you should **always** use `-r` which opens it in read-only mode.  The `-e` isn't necessary and just allows for extended information like timestamps.
 
 

@@ -6,6 +6,7 @@ tags:
   - gitlab
   - yaml
   - git
+url: gitlab-ci-dynamic-parallel-jobs
 ---
 ## The expectation of `parallel:matrix`
 GitLab CI/CD jobs can be run in parallel via parallel matrices. Take for example the following:

@@ -3,6 +3,7 @@ title: Linux File System Navigation
 tags:
   - linux
   - file-system
+url: linux-fs-navigation
 ---
 Unlike Windows & Mac, navigating files on Linux is a bit of a different beast. Well, you *could* use the GUI but a lot of the time you're not going to have that available, especially when SSHing into remote servers for debugging.
 ## Getting the current path
@@ -31,7 +32,7 @@ stat -fc %s .
 ```
 If the amount of files within the directory were to greatly increase such that the metadata size were to exceed the block size, then it would increase by the block size. E.g. `4.0K` -> `8.0K`.
 
->[!info] XFS quirks+
+>[!info] XFS quirks
 >
 >Something interesting to be aware of is that different file system systems will have slightly different behaviours. For example, XFS allows very small directories to be stored inside inodes until the inode is full, where it will then use a block. (This means it will jump from about 155 bytes to 4.0K)
 

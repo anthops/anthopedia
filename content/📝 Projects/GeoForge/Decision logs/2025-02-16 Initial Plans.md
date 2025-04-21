@@ -5,6 +5,7 @@ tags:
   - perlin-noise
   - mesh
   - voxelisation
+url: geoforge-2025-02-16
 ---
 ## Problem & Scope
 The plan is to recreate my final year honours project from University. This honours project involved developing software that generated realistic 3D geological ore bodies under the ground. Unfortunately, we wrote this when we were inexperienced. It used python and was quite slow and poorly written.

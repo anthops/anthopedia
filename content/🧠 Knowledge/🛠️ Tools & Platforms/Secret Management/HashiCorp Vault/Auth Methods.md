@@ -3,6 +3,7 @@ title: Auth Methods
 tags:
   - secrets
   - auth
+url: hashicorp-vault-auth-methods
 ---
 Authentication methods in HashiCorp Vault are plugins that verify identities (users/machines/services) and grant them tokens with associated policies. They are enabled using the `auth enable` command:
 ```bash

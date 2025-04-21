@@ -2,6 +2,7 @@
 title: Squashing Commits
 tags:
   - git
+url: git-squashing-commits
 ---
 >[!danger]+ Leaked Secrets
 >If you have leaked an API key to GitHub or some other remote, squashing alone is not a safe solution. Consider the key compromised - **the only safe solution** is to rotate the key.

@@ -2,6 +2,7 @@
 title: Ubuntu Scaling 4K Monitors
 tags:
   - ubuntu
+url: ubuntu-display-scaling
 ---
 When using 4K monitors Ubuntu will appear extremely zoomed out, making it difficult to use. There is a way to scale up via the settings as seen below:
 

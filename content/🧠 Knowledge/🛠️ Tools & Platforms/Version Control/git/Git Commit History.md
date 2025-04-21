@@ -2,6 +2,7 @@
 title: Git Commit History
 tags:
   - git
+url: git-commit-history
 ---
 ## Replacing Author in commit history
 

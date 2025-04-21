@@ -3,6 +3,7 @@ title: Faster GitLab Upgrades
 tags:
   - git
   - gitlab
+url: gitlab-faster-upgrades
 ---
 When upgrading GitLab instances there are series of background migrations that take place at the end of the upgrade. These involve both database migrations and advanced search migrations.
 

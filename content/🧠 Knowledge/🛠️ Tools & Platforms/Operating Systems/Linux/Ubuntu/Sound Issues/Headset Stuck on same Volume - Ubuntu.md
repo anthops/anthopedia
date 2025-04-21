@@ -3,6 +3,7 @@ title: Headset Stuck on same Volume - Ubuntu
 tags:
   - ubuntu
   - troubleshooting
+url: ubuntu-headset-volume-stuck
 ---
 One strange issue that can be encountered on Ubuntu is when headphones are stuck on the same volume. Increasing the volume in the settings (or the keyboard) will have no impact on the output - however, the volume control on the headphones themselves does (In my experience I was using a Corsair Virtuoso headset).
 

@@ -4,6 +4,7 @@ tags:
   - windows
   - linux
   - "#troubleshooting"
+url: dual-booting
 ---
 ## Wrong time in Windows after Dual boot
 >[!info]+ 
