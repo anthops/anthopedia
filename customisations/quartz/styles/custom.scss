@@ -1,0 +1,12 @@
+@use "./base.scss";
+
+// code tab size
+pre {
+  tab-size: 2;
+}
+
+// remove extra margins on images that aren't within a list
+:not(li > p):is(p) > img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
