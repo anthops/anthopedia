@@ -19,10 +19,8 @@ Thankfully, Git allows you to do this. While it’s not exactly a quick task, us
 	
 			style(quartz): set code indent tab-size to 2 and change margins on images after a paragraph
 
-		.
-		.
-		.
-	
+			⋮
+
 	commit d22135af0b6f4bb89e0fd9c21e44a2f3f6bb82d3
 	Author: Tony <32993852+anthops@users.noreply.github.com>
 	Date:   Tue Apr 8 16:41:00 2025 +0930
