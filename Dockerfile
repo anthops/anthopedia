@@ -40,13 +40,16 @@ COPY --chown=quartz:quartz customisations/ .
 
 # strip emojis from folder names
 COPY --chown=quartz:quartz ["content/📝 Projects", "content/Projects"]
+COPY --chown=quartz:quartz ["content/🧠 Knowledge/☁️ Cloud", "content/Knowledge/Cloud"]
 COPY --chown=quartz:quartz ["content/🧠 Knowledge/⛓️ Blockchain", "content/Knowledge/Blockchain"]
+COPY --chown=quartz:quartz ["content/🧠 Knowledge/🌐 Networking", "content/Knowledge/Networking"]
 COPY --chown=quartz:quartz ["content/🧠 Knowledge/📜 Software Licensing", "content/Knowledge/Software Licensing"]
-COPY --chown=quartz:quartz ["content/🧠 Knowledge/🖥️ Systems Programming", "content/Knowledge/Systems Programming"]
-COPY --chown=quartz:quartz ["content/🧠 Knowledge/🛠️ Tools & Platforms", "content/Knowledge/Tools & Platforms"]
-COPY --chown=quartz:quartz ["content/🧠 Knowledge/🛡️ Cybersecurity", "content/Knowledge/Cybersecurity"]
+COPY --chown=quartz:quartz ["content/🧠 Knowledge/📞 Telephony Systems", "content/Knowledge/Telephony Systems"]
+COPY --chown=quartz:quartz ["content/🧠 Knowledge/🖥️ Operating Systems", "content/Knowledge/Operating Systems"]
 COPY --chown=quartz:quartz ["content/🧠 Knowledge/🤖 Artificial Intelligence", "content/Knowledge/Artificial Intelligence"]
 COPY --chown=quartz:quartz ["content/🧠 Knowledge/🧑🏼‍💻 Programming", "content/Knowledge/Programming"]
+COPY --chown=quartz:quartz ["content/🧠 Knowledge/🚀 DevSecOps & Platforms", "content/Knowledge/DevSecOps & Platforms"]
+COPY --chown=quartz:quartz ["content/🧠 Knowledge/🛡️ Cybersecurity", "content/Knowledge/Cybersecurity"]
 COPY --chown=quartz:quartz ["content/_images", "content/_images"]
 COPY --chown=quartz:quartz ["content/index.md", "content/index.md"]
 
