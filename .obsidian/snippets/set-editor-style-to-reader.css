@@ -335,4 +335,10 @@ div.el-ol > ol > li {
     transform: translateX(0.225rem) !important;
 }
 
+/* apply bottom margin to list elements with a break since this means they have
+   text on a newline. (It will look less cluttered this way) */
+li:has(br) {
+  margin-bottom: var(--p-spacing);
+}
+
 /* #endregion */
