@@ -2,6 +2,7 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 // shared mapFn logic for Explorer components
+// shared mapFn logic for Explorer components
 const explorerMapFn = (node) => {
   if (node.isFolder) {
     switch (node.displayName) {
@@ -11,20 +12,23 @@ const explorerMapFn = (node) => {
       case "Projects":
         node.displayName = "📝 Projects";
         break;
+      case "Cloud":
+        node.displayName = "☁️ Cloud";
+        break;
       case "Blockchain":
         node.displayName = "⛓️ Blockchain";
+        break;
+      case "Networking":
+        node.displayName = "🌐 Networking";
         break;
       case "Software Licensing":
         node.displayName = "📜 Software Licensing";
         break;
-      case "Systems Programming":
-        node.displayName = "🖥️ Systems Programming";
+      case "Telephony Systems":
+        node.displayName = "📞 Telephony Systems";
         break;
-      case "Tools & Platforms":
-        node.displayName = "🛠️ Tools & Platforms";
-        break;
-      case "Cybersecurity":
-        node.displayName = "🛡️ Cybersecurity";
+      case "Operating Systems":
+        node.displayName = "🖥️ Operating Systems";
         break;
       case "Artificial Intelligence":
         node.displayName = "🤖 Artificial Intelligence";
@@ -32,11 +36,18 @@ const explorerMapFn = (node) => {
       case "Programming":
         node.displayName = "🧑🏼‍💻 Programming";
         break;
+      case "DevSecOps & Platforms":
+        node.displayName = "🚀 DevSecOps & Platforms";
+        break;
+      case "Cybersecurity":
+        node.displayName = "🛡️ Cybersecurity";
+        break;
       default:
         break;
     }
   }
 };
+
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
