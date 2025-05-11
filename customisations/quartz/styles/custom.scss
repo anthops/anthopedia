@@ -12,7 +12,7 @@ pre {
 }
 
 // apply bottom margin to list elements with a break since this means they have
-// text on a newline. (It will looks less cluttered this way)
+// text on a newline. (It will look less cluttered this way)
 li:has(br) {
   margin-bottom: 10px;
 }

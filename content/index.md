@@ -10,7 +10,6 @@ The project section is what I use to document any of my own or other **open sour
 This mainly contains decision logs on design decisions as well as problems and solutions, often linking back to the Knowledge section where possible
 ## 🧠 Knowledge
 As the name suggests, the knowledge section contains all (or at least a good chunk) of my software knowledge. It’s currently broken up into the following subcategories (some of which are still empty):
-
 - 🧑🏼‍💻 **Programming**  
   Language, library and framework-specific patterns, common pitfalls (e.g., C++ move semantics, Spring Boot quirks), and practical guidance on developer tools like IDEs and Git. It also explores how source code is transformed into running programs via compilers, interpreters, and build systems.
   
