@@ -3,7 +3,7 @@ title: Dual Booting
 tags:
   - windows
   - linux
-  - "#troubleshooting"
+  - troubleshooting
 url: dual-booting
 ---
 ## Wrong time in Windows after Dual boot

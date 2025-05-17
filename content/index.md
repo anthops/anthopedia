@@ -13,14 +13,14 @@ As the name suggests, the knowledge section contains all (or at least a good chu
 - 🧑🏼‍💻 **Programming**  
   Language, library and framework-specific patterns, common pitfalls (e.g., C++ move semantics, Spring Boot quirks), and practical guidance on developer tools like IDEs and Git. It also explores how source code is transformed into running programs via compilers, interpreters, and build systems.
   
-- 🖥️ **Operating Systems**  
-  Insights into the design and behaviour of operating systems - from kernel architecture to driver development. It also includes OS-specific troubleshooting, configurations, and quirks across different OS and distributions.
+- 🖥️ **OS Internals & Systems Programming**  
+  Insights into the design and behaviour of operating systems - from kernel architecture to driver development.
   
 - 🚀 **DevSecOps & Platforms**  
   Guides and pitfalls / solutions for both opensource & closed-source tools / platforms used in all stages throughout the DevSecOps lifecycle. This covers CI/CD, Infrastructure as Code, container orchestration, monitoring, and more.
   
-- 🌐 **Networking**  
-  Core protocols (TCP/IP, DNS), network infrastructure (routers, switches), and tools like Wireshark for traffic analysis. Includes security practices (firewalls, VPNs) and modern architectures like SD-WAN or zero-trust networks.
+- ⚙️ **Sysadmin & Networking**  
+  Core protocols (TCP/IP, DNS), network infrastructure (routers, switches), and tools like Wireshark for traffic analysis. Firewalls, VPNs, Active Directory, Virtualisation, and OS-specific troubleshooting, configurations & quirks.
   
 - 📞 **Telephony Systems**  
   Traditional telephony (PSTN, PBX) and modern VoIP systems (SIP, RTP), including tools like FreeSWITCH and OpenSIPS for call routing. Covers hybrid architectures like cloud telephony and SIP trunking for scalable voice solutions.

@@ -18,8 +18,8 @@ const explorerMapFn = (node) => {
       case "Blockchain":
         node.displayName = "⛓️ Blockchain";
         break;
-      case "Networking":
-        node.displayName = "🌐 Networking";
+      case "Sysadmin & Networking":
+        node.displayName = "⚙️ Sysadmin & Networking";
         break;
       case "Software Licensing":
         node.displayName = "📜 Software Licensing";
@@ -27,8 +27,8 @@ const explorerMapFn = (node) => {
       case "Telephony Systems":
         node.displayName = "📞 Telephony Systems";
         break;
-      case "Operating Systems":
-        node.displayName = "🖥️ Operating Systems";
+      case "OS Internals":
+        node.displayName = "🖥️ OS Internals";
         break;
       case "Artificial Intelligence":
         node.displayName = "🤖 Artificial Intelligence";
