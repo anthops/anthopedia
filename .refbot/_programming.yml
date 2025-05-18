@@ -1,0 +1,47 @@
+_versioning:
+  - &jetbrains
+    version_pattern: "(?<year>\\d{4})\\.(?<major>\\d+)(?:\\.(?<minor>\\d+))?(?:\\.(?<build>\\d+))?"
+    tracking_policy:
+      year:
+        type: alert
+      major:
+        type: alert
+  - &strict_semver
+    version_pattern: "v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
+    tracking_policy:
+      major:
+        type: alert
+      minor:
+        type: delta
+        threshold: 6
+
+_programming:
+  - &openjdk
+    name: "OpenJDK"
+    version_tracking:
+      releases: "https://github.com/openjdk/jdk/tags"
+      referenced_version: "jdk-24-ga"
+      version_regex: "jdk-(?<version>\\d+)-ga"
+      tracking_policy:
+        version:
+          type: alert
+  - &spring_boot
+    name: "Spring Boot"
+    version_tracking:
+      releases: "https://github.com/spring-projects/spring-boot/tags"
+      referenced_version: "v3.4.5"
+      <<: *strict_semver
+  - &git
+    name: "git"
+    version_tracking:
+      releases: "https://github.com/git/git/tags"
+      referenced_version: "v2.43.0"
+      <<: *strict_semver
+
+_ides:
+  - &jetbrains_webstorm
+    name: "JetBrains WebStorm"
+    version_tracking:
+      releases: "https://www.jetbrains.com/webstorm/download/other.html#"
+      referenced_version: "2025.1"
+      <<: *jetbrains

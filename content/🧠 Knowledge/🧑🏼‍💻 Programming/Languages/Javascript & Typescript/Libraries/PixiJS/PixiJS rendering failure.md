@@ -6,13 +6,21 @@ tags:
   - webgpu
   - typescript
   - gpu
+  - "#bug"
+  - "#bug-open"
 url: pixijs-rendering-failure
 ---
+>[!info]- Software versions used
+>- This issue was encountered and debugged on a Google Pixel 9 Pro XL running [Android 15](https://developer.android.com/about/versions/15)
+>- [PixiJS v8.9.2](https://github.com/pixijs/pixijs/releases/tag/v8.9.2)
+>- [npm 11.3.0](https://www.npmjs.com/package/npm/v/11.3.0)
+>- [Typescript 5.8.3](https://www.npmjs.com/package/typescript/v/5.8.3)
+
+> [!bug]+ Referenced Issues:
+> - GitHub Issue [#11389](https://github.com/pixijs/pixijs/issues/11389).
+> - This is still a bug as of [PixiJS v8.9.2](https://github.com/pixijs/pixijs/releases/tag/v8.9.2). Since writing, this bug has been resolved and the issue closed - however it is still pending a new release.
 ## Summary
 The [PixiJS v8 release](https://github.com/pixijs/pixijs/releases/tag/v8.0.0) introduced WebGPU support to leverage modern GPU capabilities when rendering rather than just WebGL. Unfortunately, this has come with a rendering issue where certain devices seemingly fail to render anything when WebGPU is used.
-
->[!bug]+ Affected Versions
->This is still a bug as of [v8.9.2](https://github.com/pixijs/pixijs/releases/tag/v8.9.2), with issue [#11389](https://github.com/pixijs/pixijs/issues/11389 ) raised detailing the cause and potential fix. This note summarises the cause as well as a workaround for versions with the issue.
 
 For example, the example PixiJS script at https://pixijs.com/8.x/playground outputs the following:
 

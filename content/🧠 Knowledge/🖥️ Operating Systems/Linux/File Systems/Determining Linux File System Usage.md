@@ -5,6 +5,11 @@ tags:
   - file-system
 url: linux-fs-usage
 ---
+>[!info]- Software versions used
+>- Commands were run on [Ubuntu 24.04.2 LTS](https://releases.ubuntu.com/24.04.2/)
+>- `df` and `du` from [GNU coreutils 9.4-3](https://launchpad.net/ubuntu/+source/coreutils/9.4-3.1ubuntu1)
+>- [ncdu 1.19](https://launchpad.net/ubuntu/+source/ncdu/1.19-0.1)
+
 Much like with [[Linux File System Navigation|navigating the Linux file system]], determining file system usage and pinpointing where and what is taking up space is a lot more difficult than in more user friendly operating systems - when we're working exclusively in the CLI that is. This page outlines a few tools that are necessary for determining file system usage in Linux systems.
 ## Viewing file system usage
 As we saw, `ls` isn't great at reporting the overall storage usage of a system. So what if we wanted to get a rough idea of how much of our file system was used up?

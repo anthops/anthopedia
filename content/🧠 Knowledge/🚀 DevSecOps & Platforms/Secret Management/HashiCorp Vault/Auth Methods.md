@@ -5,6 +5,9 @@ tags:
   - auth
 url: hashicorp-vault-auth-methods
 ---
+>[!info]- Software versions used
+>- [HashiCorp Vault v1.19.4](https://github.com/hashicorp/vault/releases/tag/v1.19.4)
+
 Authentication methods in HashiCorp Vault are plugins that verify identities (users/machines/services) and grant them tokens with associated policies. They are enabled using the `auth enable` command:
 ```bash
 vault auth enable [options] <METHOD_TYPE>

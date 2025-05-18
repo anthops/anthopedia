@@ -8,6 +8,8 @@ tags:
   - git
 url: gitlab-ci-input-arrays
 ---
+>[!info]- Software versions used
+>- [GitLab 17.9.2](https://github.com/git/git/releases/tag/v2.43.0)
 ## Input array -> bash array
 When writing your GitLab CI, you may want to consume an inputted array and process it in your bash script. Unfortunately, the inputted arrays are actually JSON-like strings. They aren't exactly JSON since the inputted variables may not be surrounded in double quotes and can have spaces without double quotes surrounding them. For example, the following is totally valid:
 ```yaml

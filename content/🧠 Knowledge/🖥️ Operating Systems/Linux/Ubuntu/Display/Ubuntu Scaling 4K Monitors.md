@@ -4,6 +4,11 @@ tags:
   - ubuntu
 url: ubuntu-display-scaling
 ---
+>[!info]- Software versions used
+>This page references [Ubuntu 24.04.2 LTS](https://releases.ubuntu.com/24.04.2/), where the following versions are the defaults — whether preinstalled or installed via `apt` :
+>- [GNOME Shell 46.0](https://release.gnome.org/46/)
+>- [gnome-tweaks 46.0-2](https://launchpad.net/ubuntu/+source/gnome-tweaks/46.0-2)
+
 When using 4K monitors Ubuntu will appear extremely zoomed out, making it difficult to use. There is a way to scale up via the settings as seen below:
 
 ![[display-settings.png|650]]

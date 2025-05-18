@@ -9,6 +9,12 @@ tags:
   - containerisation
 url: gitlab-ci-private-image-repos
 ---
+>[!info]- Software versions used
+>- [GitLab 17.9.2](https://github.com/git/git/releases/tag/v2.43.0)
+
+> [!bug]+ Referenced Issues:
+> - GitLab Issue [#13514]( https://gitlab.com/gitlab-org/gitlab/-/issues/13514)
+
 When creating a job in GitLab, one might want to configure the job to use a custom image from their own repository. This is particularly useful when working in air-gapped environments or when using images with specific binaries baked in:
 ```yaml
 my-job:

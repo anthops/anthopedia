@@ -5,6 +5,9 @@ tags:
   - github
 url: github-recovering-lost-commits
 ---
+>[!info]- Software versions used
+>- [GitHub 2025-05-16 Release](https://github.blog/changelog/2025-05-16-github-copilot-premium-request-report-available-today/)
+
 Disaster! You've just done a `git reset --hard` and lost a bunch of commits. Worse still, you've somehow expired the local [[Git Reflog|reflog]]. All hope is lost... or is it? If you just force pushed to GitHub then you're in luck. For better or for worse, the commits are actually still accessible via the GitHub API.
 
 If you're trying to recover lost commits then this is a blessing in disguise. However, if you've just pushed a secret then this page should serve as just one reminder why a pushed secret is compromised. 

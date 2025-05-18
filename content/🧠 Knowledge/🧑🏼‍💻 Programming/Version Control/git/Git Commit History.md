@@ -4,6 +4,8 @@ tags:
   - git
 url: git-commit-history
 ---
+>[!info]- Software versions used
+>- [git 2.43.0](https://github.com/git/git/releases/tag/v2.43.0)
 ## Replacing Author in commit history
 
 Sometimes you might accidentally use the wrong username or email when committing changes to a repository. For example, you might accidentally use a work email on a public repository!

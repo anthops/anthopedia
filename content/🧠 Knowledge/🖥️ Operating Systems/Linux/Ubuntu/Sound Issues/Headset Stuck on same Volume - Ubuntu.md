@@ -5,6 +5,11 @@ tags:
   - troubleshooting
 url: ubuntu-headset-volume-stuck
 ---
+>[!info]- Software versions used
+This page references [Ubuntu 24.04.2 LTS](https://releases.ubuntu.com/24.04.2/), where the following versions are the defaults — whether preinstalled or installed via `apt`:
+>- [PulseAudio 16.1](https://launchpad.net/ubuntu/+source/pulseaudio/1:16.1+dfsg1-2ubuntu10.1)
+>- [PipeWire 1.0.5](https://launchpad.net/ubuntu/+source/pipewire/1.0.5-1ubuntu3)
+
 One strange issue that can be encountered on Ubuntu is when headphones are stuck on the same volume. Increasing the volume in the settings (or the keyboard) will have no impact on the output - however, the volume control on the headphones themselves does (In my experience I was using a Corsair Virtuoso headset).
 
 This is ultimately caused by GNOME's sound slider mapping to the wrong `ALSA` control element (the interface that controls the device's sound).
