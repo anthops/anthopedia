@@ -5,6 +5,10 @@ tags:
   - file-system
 url: linux-fs-navigation
 ---
+>[!info]- Software versions used
+>- Commands were run on [Ubuntu 24.04.2 LTS](https://releases.ubuntu.com/24.04.2/)
+>- `ls` and `stat` from [GNU coreutils 9.4-3](https://launchpad.net/ubuntu/+source/coreutils/9.4-3.1ubuntu1)
+
 Unlike Windows & Mac, navigating files on Linux is a bit of a different beast. Well, you *could* use the GUI but a lot of the time you're not going to have that available, especially when SSHing into remote servers for debugging.
 ## Getting the current path
 Not all terminals will bless you by showing you your current path. Instead, you'll need to use the following to get that:

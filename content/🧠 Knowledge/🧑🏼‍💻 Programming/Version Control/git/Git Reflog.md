@@ -4,6 +4,9 @@ tags:
   - git
 url: git-reflog
 ---
+>[!info]- Software versions used
+>- [git 2.43.0](https://github.com/git/git/releases/tag/v2.43.0)
+
 Every time you move a branch pointer (like `HEAD` or `main`), Git records that change in a **reference log**, or **reflog**. This includes commits, checkouts, rebases, resets, and even stash applications. 
 
 While `git log` only shows commits that are reachable from the current branch history, `git reflog` reveals a record of all reference updates in your local repository. This makes it invaluable for recovering "lost" work — such as after an accidental `reset --hard` or a mistaken `commit --amend`.

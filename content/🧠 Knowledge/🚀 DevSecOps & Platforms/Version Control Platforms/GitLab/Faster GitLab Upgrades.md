@@ -5,6 +5,9 @@ tags:
   - gitlab
 url: gitlab-faster-upgrades
 ---
+>[!info]- Software versions used
+>- [GitLab 17.9.2](https://github.com/git/git/releases/tag/v2.43.0)
+
 When upgrading GitLab instances there are series of background migrations that take place at the end of the upgrade. These involve both database migrations and advanced search migrations.
 
 GitLab *can* be used by users during background migrations, however, GitLab cannot be *upgraded* when background migrations are taking place.

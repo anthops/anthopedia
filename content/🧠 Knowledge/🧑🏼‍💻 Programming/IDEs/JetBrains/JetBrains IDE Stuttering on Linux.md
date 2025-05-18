@@ -3,8 +3,14 @@ title: JetBrains IDE Stuttering on Linux
 tags:
   - IDE
   - linux
+  - "#troubleshooting"
 url: jetbrains-stuttering-linux
 ---
+>[!info]- Software versions used
+>- Run on [Ubuntu 24.04.2 LTS](https://releases.ubuntu.com/24.04.2/) with **X11** ([xserver-xorg-core 21.1.11](https://answers.launchpad.net/ubuntu/noble/amd64/xserver-xorg-core/2:21.1.11-1ubuntu1))
+>- [JetBrains WebStorm 2025.1](https://www.jetbrains.com/webstorm/whatsnew/2025-1/)
+>- [OpenJDK 24.0.1](https://jdk.java.net/java-se-ri/24)
+
 When working in JetBrains IDEs (like IntelliJ, PyCharm, or CLion) on Linux you might encounter UI stuttering, most noticeable when scrolling through code and navigating large files. This stuttering often manifests as laggy text rendering, choppy animations, or even audio glitches in other apps (like Discord calls). In my case, the stuttering was so severe that it caused Discord voice chat to cut out intermittently. 
 ## Root cause
 >[!note] This is a suspected root cause - it could be entirely wrong

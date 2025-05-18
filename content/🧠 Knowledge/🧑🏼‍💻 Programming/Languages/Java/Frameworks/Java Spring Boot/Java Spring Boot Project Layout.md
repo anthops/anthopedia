@@ -1,13 +1,16 @@
 ---
-title: Java Springboot Project Layout
+title: Java Spring Boot Project Layout
 tags:
   - java
-  - springboot
+  - spring-boot
   - project-layout
-url: java-springboot-project-layout
+url: java-spring-boot-project-layout
 ---
+>[!info]- Software versions used
+>- [OpenJDK 24.0.1](https://jdk.java.net/java-se-ri/24)
+>- [Spring Boot 3.4.5](https://github.com/spring-projects/spring-boot/releases/tag/v3.4.5)
 ## Creating the project
-When creating a Java Springboot application, I start with [Spring Initializr](https://start.spring.io/) and pick `Gradle - Groovy` as the the dependency manager, with Java as the language (obviously). I'll usually select the latest stable versions for everything, package it in Jar, and then select core dependencies I'll need. These dependencies are usually things like:
+When creating a Java Spring Boot application, I start with [Spring Initializr](https://start.spring.io/) and pick `Gradle - Groovy` as the the dependency manager, with Java as the language (obviously). I'll usually select the latest stable versions for everything, package it in Jar, and then select core dependencies I'll need. These dependencies are usually things like:
 - Spring Boot DevTools
 - Lombok
 - Spring Web **or** Spring Reactive Web
@@ -16,7 +19,7 @@ When creating a Java Springboot application, I start with [Spring Initializr](ht
 
 After generating the project and creating the git repository, I'll add any further dependencies. If building a backend application then I'd us something like Swagger 
 ## Folder structure
-When structuring a Java Springboot project, I prefer to go with a layered approach
+When structuring a Java Spring Boot project, I prefer to go with a layered approach
 - **src/**
 	- **main/**
 		- **java/\<etc>/\<app-name>/**

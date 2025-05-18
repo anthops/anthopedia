@@ -4,6 +4,9 @@ tags:
   - git
 url: git-squashing-commits
 ---
+>[!info]- Software versions used
+>- [git 2.43.0](https://github.com/git/git/releases/tag/v2.43.0)
+
 >[!danger]+ Leaked Secrets
 >If you have leaked an API key to GitHub or some other remote, squashing alone is not a safe solution. Consider the key compromised - **the only safe solution** is to rotate the key.
 

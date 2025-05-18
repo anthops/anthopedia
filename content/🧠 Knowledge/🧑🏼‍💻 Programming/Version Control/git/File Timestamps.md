@@ -4,8 +4,10 @@ tags:
   - git
 url: git-file-timestamps
 ---
+>[!info]- Software versions used
+>- [git 2.43.0](https://github.com/git/git/releases/tag/v2.43.0)
 ## Set timestamps of checked-out files to match Git (Linux)
-> [!tip]- Example Usecase
+> [!tip]+ Example Usecase
 > 
 > The anthopedia itself makes use of this within it's GitHub deploy workflow. This is because quartz has been configured to use the local file timestamps since quartz is being cloned at build time, which means quartz can't consult the git log for commit timestamps.
 

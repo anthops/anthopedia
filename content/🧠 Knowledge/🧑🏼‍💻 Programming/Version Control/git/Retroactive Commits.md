@@ -4,6 +4,9 @@ tags:
   - git
 url: git-retroactive-commits
 ---
+>[!info]- Software versions used
+>- [git 2.43.0](https://github.com/git/git/releases/tag/v2.43.0)
+
 Imagine that you're working on a project you want to publish or share with others. You look at your commit history and realize you squashed commits a little too much. There are commits combining multiple unrelated changes, and you wish you could go back in time and break them down properly.
 
 Thankfully, Git allows you to do this. While it’s not exactly a quick task, using **interactive rebase** makes it possible to split old commits while preserving history, authorship, and dates — and avoids the risks and pitfalls of orphan branches or force-rebuilding your repo from scratch.

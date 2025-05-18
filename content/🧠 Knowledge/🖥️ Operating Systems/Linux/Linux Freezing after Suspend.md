@@ -6,9 +6,17 @@ tags:
   - X11
   - NVIDIA
   - gpu
+  - "#bug"
+  - "#bug-open"
 url: linux-freeze-post-suspend
 ---
-> [!bug] This problem is specific to X11 and NVIDIA GPUs
+>[!info]- Software versions used
+>- Issue encountered on [Ubuntu 24.04.2 LTS](https://releases.ubuntu.com/24.04.2/) with **X11** ([xserver-xorg-core 21.1.11](https://answers.launchpad.net/ubuntu/noble/amd64/xserver-xorg-core/2:21.1.11-1ubuntu1))
+>- [NVIDIA Linux x64 (AMD64/EM64T) Display Driver 570.124.04](https://www.nvidia.com/en-us/drivers/details/241089/).  
+
+> [!bug]+ Referenced Issues:
+> - [Extreme (growing) memory usage in X11 OpenGL or Vulkan applications after suspend+resume](https://forums.developer.nvidia.com/t/extreme-growing-memory-usage-in-x11-opengl-or-vulkan-applications-after-suspend-resume/329078) 
+> - This problem is specific to X11 and NVIDIA GPUs
 
 When using Linux on a system with an NVIDIA GPU and X11, you may experience a full desktop freeze except for the mouse which can move while not being able to interact with anything. This occurs some time after the computer has been suspended and then resumed. In my case, I was also was met with a popup regarding an internal error with `/usr/libexec/mutter-x11-frames` *after* I had rebooted my computer. 
 ## Suspected Root cause
@@ -27,7 +35,7 @@ Pre-550 NVIDIA drivers retained more metadata by default, accidentally avoiding 
 > [!warning] Potential Issues
 > Unfortunately, the solution below has some issues. When resuming from a suspend you may find yourself faced with a black screen where only the cursor can move. Try hitting the space-bar every now and then until the login shows. I assume this is because it takes some time to load everything from Disk. It also sometimes black-screens without ever going to the login screen.
 > 
-> The good news is the bug [has been acknowledged by NVIDIA](https://forums.developer.nvidia.com/t/extreme-growing-memory-usage-in-x11-opengl-or-vulkan-applications-after-suspend-resume/329078/11) with plans for it to be resolved in a future update. However, there is a solution that can be used for the time being.
+> The good news is the bug  with plans for it to be resolved in a future update. However, there is a solution that can be used for the time being.
 
 Until NVIDIA creates a proper fix for this we can configure the NVIDIA kernel driver to preserve all VRAM allocations before suspending the system:  
 1. First, create the following file:

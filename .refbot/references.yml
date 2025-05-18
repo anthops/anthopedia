@@ -1,0 +1,61 @@
+notes:
+  - path: "content/🧠 Knowledge/🖥️ Operating Systems/Linux/File Systems/*"
+    referenced_software:
+      - *ubuntu
+
+  - path: "content/🧠 Knowledge/🖥️ Operating Systems/Linux/File Systems/Determining Linux File System Usage.md"
+    referenced_software:
+      - *ncdu
+
+  - path: "content/🧠 Knowledge/🖥️ Operating Systems/Linux/Ubuntu/**/*"
+    referenced_software:
+      - *ubuntu
+
+  - path: "content/🧠 Knowledge/🖥️ Operating Systems/Linux/Linux Freezing after Suspend.md"
+    referenced_issues:
+      - issue: "https://forums.developer.nvidia.com/t/extreme-growing-memory-usage-in-x11-opengl-or-vulkan-applications-after-suspend-resume/329078"
+
+  - path: "content/🧠 Knowledge/🧑🏼‍💻 Programming/IDEs/JetBrains/JetBrains IDE Stuttering on Linux.md"
+    referenced_software:
+      - *ubuntu
+      - *jetbrains_webstorm
+
+  - path: "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/**/*"
+    referenced_software:
+      - *openjdk
+
+  - path: "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Spring Boot/**/*"
+    referenced_software:
+      - *spring_boot
+
+  - path: "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/JavaScript & Typescript/Libraries/PixiJS/PixiJS rendering failure.md"
+    referenced_issues:
+      - issue: "https://github.com/pixijs/pixijs/issues/11389"
+
+  - path: "content/🧠 Knowledge/🧑🏼‍💻 Programming/Version Control/**/*"
+    referenced_software:
+      - *git
+
+  - path: "content/🧠 Knowledge/🚀 DevSecOps & Platforms/CICD/GitLab CI/**/*"
+    referenced_software:
+      - *gitlab
+
+  - path: "content/🧠 Knowledge/🚀 DevSecOps & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md"
+    referenced_issues:
+      - issue: "https://gitlab.com/gitlab-org/gitlab/-/issues/388401"
+
+  - path: "content/🧠 Knowledge/🚀 DevSecOps & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md"
+    referenced_issues:
+      - issue: " https://gitlab.com/gitlab-org/gitlab/-/issues/13514"
+
+  - path: "content/🧠 Knowledge/🚀 DevSecOps & Platforms/Secret Management/HashiCorp Vault/**/*"
+    referenced_software:
+      - *hashicorp_vault
+
+  - path: "content/🧠 Knowledge/🚀 DevSecOps & Platforms/GitHub/**/*"
+    referenced_software:
+      - *github
+
+  - path: "content/🧠 Knowledge/🚀 DevSecOps & Platforms/GitLab/**/*"
+    referenced_software:
+      - *gitlab

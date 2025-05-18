@@ -1,0 +1,25 @@
+_sysadmin:
+  - &ubuntu
+    name: "Ubuntu" 
+    version_tracking:
+      releases: "https://wiki.ubuntu.com/Releases"
+      referenced_version: "24.04.2 LTS"
+      version_pattern: "(?<year>\\d+)\\.(?<month>\\d+)\\.?(?<build>\\d+)? LTS"
+      tracking_policy:
+        major:
+          type: alert
+        minor:
+          type: delta
+          threshold: 6
+  - &ncdu
+    name: "ncdu"
+    version_tracking:
+      releases: "https://launchpad.net/ubuntu/+source/ncdu"
+      referenced_version: "1.19-0.1"
+      version_pattern: "(?<major>\\d+)\\.(?<minor>\\d+)\\.?(?<patch>\\d+)?-(?<build>\\d+).*"
+      tracking_policy:
+        major:
+          type: alert
+        minor:
+          type: delta
+          threshold: 6
