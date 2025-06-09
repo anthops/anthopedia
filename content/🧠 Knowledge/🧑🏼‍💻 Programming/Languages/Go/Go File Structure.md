@@ -134,7 +134,8 @@ Preferred file structure is in this order:
 2. Imports (obviously)
 3. Constants
 4. Variables
-5. Free functions (not methods of a struct)
+5. Non-struct types
+6. Free functions (not methods of a struct)
 	1. Exported
 	2. Non-exported
 6. Interfaces
@@ -145,7 +146,14 @@ Preferred file structure is in this order:
 
 The exported methods and non-exported methods should be ordered top -> down in order of how soon after the function above them they are used.
 
-Also, if there are structs with lots of methods I will try and separate those into different files. E.g `client.go`:
+Also, if there are structs with lots of methods I will try and separate those into different files. 
+
+> [!note] 
+> I just started learning go so this will definitely change. It does seem idiomatic to define some variables above the function they're used in. We'll see
+
+
+
+E.g `client.go`:
 
 ```go
 package mypackage
@@ -163,6 +171,9 @@ const (
 var (
   globalCount int  
 )
+
+type MyCallback func(string)
+type Something string
 
 func ExportedFreeFunction(ctx context.Context, logger zerolog.Logger) error {}
 
