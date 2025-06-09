@@ -173,19 +173,23 @@ type Client interface {
   ExportedMethodTwo(ctx context.Context, otherArgs string) error
 }
 
-type Client struct {
+type HTTPClient struct {
   logger zerolog.Logger
   opts ClientOptions
 }
 
 type ClientOptions struct {}
 
-func NewClient(ctx context.Context, logger zerolog.Logger, opts ClientOptions) (*Client, error) {}
+// Constructor with a bit of Liskov substitution.
+// Could've returned (*HTTPClient, error) instead (which we'd do if there was no interface)
+func NewHTTPClient(ctx context.Context, logger zerolog.Logger, opts ClientOptions) (Client, error) {
+  return &HTTPClient{}, nil
+}
 
-func (c *Client) ExportedMethodOne(ctx context.Context, otherArgs string) error {}
-func (c *Client) ExportedMethodTwo(ctx context.Context, otherArgs string) error {}
+func (hc *HTTPClient) ExportedMethodOne(ctx context.Context, otherArgs string) error {}
+func (hc *HTTPClient) ExportedMethodTwo(ctx context.Context, otherArgs string) error {}
 
-func (c *Client) nonExportedMethod(ctx context.Context, otherArgs string) error {}
+func (hc *HTTPClient) nonExportedMethod(ctx context.Context, otherArgs string) error {}
 ```
 
-Notice that I also inject the logger rather than use it globally
+Notice that I also inject the logger rather than use it globally. The struct methods obviously don't have it passed in since it's part of the struct and can be called with `hc.logger`. 
