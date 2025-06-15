@@ -22,7 +22,7 @@ Then create `/etc/freeswitch/autoload_configs/event_socket.conf.xml` to configur
 ```xml
 <configuration name="event_socket.conf" description="ESL Connection">
 	<settings>
-		<param name="listen-ip" value="0.0.0.0"/>           <!-- socket listens on localhost -->
+		<param name="listen-ip" value="0.0.0.0"/>           <!-- socket listens to all interfaces in container -->
 		<param name="listen-port" value="8021"/>            <!-- socket port -->
 		<param name="password" value="$${esl_password}"/>   <!-- password used to authenticate with esl (set elsewhere) -->
 		<param name="apply-inbound-acl" value="esl"/>       <!-- ACL rules to only allow connections from certain IPs -->
@@ -38,7 +38,7 @@ The ACL config exists in `/etc/freeswitch/autoload_configs/acl.conf.xml`. For ex
 <configuration name="acl.conf">
 	<network-lists>
 		<list name="esl" default="deny">
-			<node type="allow" cidr="0.0.0.0/32"/>
+			<node type="allow" cidr="127.0.0.1/32"/>
 			<node type="allow" cidr="10.0.0.0/24"/>
 		</list>
 	</network-lists>
